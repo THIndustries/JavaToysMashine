@@ -4,6 +4,7 @@ import java.util.PriorityQueue;
 import java.util.Random;
 
 public class Store {
+    //для хранения игрушек в порядке убывания их весов:
     private PriorityQueue<Toys> toyPriority;
     public Store() {
         toyPriority = new PriorityQueue<>((t1, t2) -> t2.weight - t1.weight);
